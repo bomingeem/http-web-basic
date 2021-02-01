@@ -18,6 +18,7 @@
 · 201 Created  
   요청 성공해서 새로운 리소스가 생성됨  
   POST  
+  생성된 리소스는 응답의 Location 헤더 필드로 식별  
 · 202 Accepted  
   요청이 접수되었으나 처리가 완료되지 않음  
   배치 처리 같은 곳에서 사용  
@@ -32,8 +33,8 @@
 
 종류  
 · 영구 리다이렉션 - 특정 리소스의 URI가 영구적으로 이동  
-  예) members → /users  
-  예) event → /new-event  
+  예) /members → /users  
+  예) /event → /new-event  
 · 일시 리다이렉션 - 일시적인 변경  
   · 주문 완료 후 주문 내역 화면으로 이동  
   · PRG: Post/Redirect/Get  
@@ -121,9 +122,4 @@
 **503 Service Unavailable**  
 서비스 이용 불가  
 · 서버가 일시적인 과부하 또는 예정된 작업으로 잠시 요청을 처리할 수 없음  
-· Retry-After 헤더 필드로 얼마뒤에 복구되는지 보낼 수도 있음  
-
-
-
-
-
+· Retry-After 헤더 필드로 얼마뒤에 복구되는지 보낼 수도 있음
