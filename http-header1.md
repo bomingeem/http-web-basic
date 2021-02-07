@@ -151,7 +151,7 @@ Secure, HttpOnly, SameSite
 • Secure  
   • 쿠키는 http, https를 구분하지 않고 전송  
   • Secure를 적용하면 https인 경우에만 전송  
-• HttpOnly  
+• HttpOnly   
   • XSS 공격 방지  
   • 자바스크립트에서 접근 불가(document.cookie)  
   • HTTP 전송에만 사용  
